@@ -330,23 +330,4 @@ It started as a simple transcription tool and evolved into a full AI-powered vid
 
 ---
 
-# 🤝 Contributing
-
-Pull requests and suggestions are welcome.
-
-If you find bugs or want to improve the project, feel free to open an issue.
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-# ⭐ If You Like This Project
-
-Give the repository a star and share it with others.
-
-It helps more than you think.
 
