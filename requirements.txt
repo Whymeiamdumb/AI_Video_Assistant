@@ -1,0 +1,40 @@
+# ── Audio & Video ─────────────────────────────────────────────────────────────
+yt-dlp>=2024.3.10               # YouTube audio download
+pydub>=0.25.1                   # Audio processing / format conversion
+ffmpeg-python>=0.2.0            # FFmpeg bindings (ffmpeg binary must be installed)
+
+# ── Transcription ──────────────────────────────────────────────────────────────
+openai-whisper>=20231117        # Local Whisper ASR
+torch>=2.2.0                    # Whisper / HuggingFace backend
+torchaudio>=2.2.0               # Audio tensor utilities
+
+# ── Translation (Hindi → English) ─────────────────────────────────────────────
+deep-translator>=1.11.4         # Google/DeepL/MyMemory translation (no heavy models)
+
+# ── LLM & LangChain LCEL ──────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+# Note: mistralai and langchain-mistralai are not available in the package registry
+# Install separately if needed: pip install mistral-common mistralai
+
+# ── RAG – Embeddings & Vector Store ───────────────────────────────────────────
+chromadb>=0.5.0                 # Local vector store
+sentence-transformers>=3.0.0    # HuggingFace embeddings (e.g. all-MiniLM-L6-v2)
+langchain-huggingface>=0.0.3    # HuggingFaceEmbeddings wrapper for LangChain
+
+# ── UI ─────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+streamlit-extras>=0.4.0         # Extra Streamlit components (badges, toggle, etc.)
+
+# ── File Watching ──────────────────────────────────────────────────────────────
+watchdog>=4.0.0                 # Streamlit hot-reload & file system event monitoring
+
+# ── Export ────────────────────────────────────────────────────────────────────
+fpdf2>=2.7.9                    # PDF generation
+reportlab>=4.2.0                # Alternative PDF engine (optional, pick one)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0            # .env file loading
+numpy>=1.26.0
+tqdm>=4.66.0                    # Progress bars
