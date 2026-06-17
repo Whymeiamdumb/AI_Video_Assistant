@@ -19,7 +19,8 @@ transcript = transcribe_all(chunks, language=language)
 print("\n" + "=" * 60)
 print("📝 TRANSCRIPT")
 print("=" * 60)
-print(transcript[:500] + "..." if len(transcript) > 500 else transcript)
+print("Transcript length:", len(transcript))
+print(transcript)
 
 
 title = generate_title(transcript)
